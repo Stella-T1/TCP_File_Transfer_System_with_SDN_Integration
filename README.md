@@ -56,8 +56,14 @@ This setup allows flexible routing and redirection logic for testing SDN-based c
 - **Logging**: Server logs stored and rotated daily
 - **Error Handling**: Detects integrity mismatch, transmission failures, timeouts
 
+## 🗺️ System Topology Overview
+
+The file transfer system operates over a software-defined network with centralized flow control. The topology includes one client, two servers, and a single OpenFlow-enabled SDN switch managed by a Ryu controller.
+
+![System Topology](./topology.png)
+
 ## 📚 References
 
-- [Ryu SDN Framework](https://osrg.github.io/ryu/)
+- [Ryu Support](https://ryu-sdn.org/)
 - [Mininet](http://mininet.org/)
 - [Python `socket` Documentation](https://docs.python.org/3/library/socket.html)
